@@ -496,9 +496,13 @@ section {
     width: auto !important;
   }
 }
+
 @media (max-width: 575.98px) {
   .players-card {
     transform: translate(-5%, 20%);
+  }
+  .section-header h2{
+    font-size: 1.5rem !important;
   }
   .marquee-glow {
     width: 100%;
