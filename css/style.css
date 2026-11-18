@@ -1,0 +1,503 @@
+/* =================== Variables Start ============*/
+:root {
+  --main: #f472b6;
+  --main-dark: #ec4899;
+  --accent: #38bdf8;
+  --accent-dark: #0ea5e9;
+  --bg: #0a1128;
+  --surface: #111a3a;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+}
+/* =================== Variables End ============*/
+
+/* =================== Base Start ============*/
+body {
+  font-family: "Chakra Petch", sans-serif;
+    margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Days One", sans-serif;
+}
+html {
+  scroll-padding-top: 100px;
+}
+section {
+  padding-block: 4rem;
+}
+/* =================== Base End ============*/
+
+/* =================== Colors Start ============*/
+.text-main {
+  color: var(--main);
+}
+.text-accent {
+  color: var(--accent);
+}
+.text-surface {
+  color: var(--surface);
+}
+.text-color {
+  color: var(--text);
+}
+.text-muted-2 {
+  color: var(--muted);
+}
+.text-bg-dark-navy {
+  color: var(--bg);
+}
+
+.bg-main {
+  background-color: var(--main);
+}
+.bg-accent {
+  background-color: var(--accent);
+}
+.bg-base {
+  background-color: var(--bg);
+}
+.bg-surface {
+  background-color: var(--surface);
+}
+.border-main {
+  border-color: var(--main) !important;
+}
+/* =================== Colors End ============*/
+
+/* =================== Helper Classes Start ============*/
+.f-20 {
+  font-size: 20px;
+}
+.f-16 {
+  font-size: 16px;
+}
+/* =================== Helper Classes End ============*/
+
+/* =================== Nav Start============*/
+.navbar-brand {
+  --bs-navbar-brand-hover-color: var(--main);
+}
+.btn-main {
+  padding: 0.5rem 1.6rem;
+  position: relative;
+  overflow: hidden;
+}
+.btn-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+  transition: left 0.6s;
+}
+.btn-main:hover::before {
+  left: 100%;
+}
+
+.main-navbar .navbar-brand {
+  font-size: 1.5rem;
+}
+.main-navbar .nav-link {
+  font-size: 1.05rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+}
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link.active {
+  color: var(--main);
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+  transition: color 0.2s;
+}
+.nav-icon:hover {
+  color: var(--main);
+}
+.main-navbar {
+  --bs-navbar-padding-y: 1rem;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f472b6' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* =================== Nav End ============*/
+
+#home {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image:
+    linear-gradient(rgba(10, 17, 40, 0.9), rgba(10, 17, 40, 0.9)),
+    url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-block: 7rem;
+}
+
+.players-card {
+  transform: translate(-15%, 25%);
+  z-index: 2;
+  width: max-content;
+  max-width: 90%;
+}
+
+.btn-outline-accent {
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-outline-accent:hover {
+  background: var(--main);
+  color: var(--bg);
+}
+
+.arrow-btn {
+  width: 56px;
+  height: 56px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: var(--main) !important;
+  color: var(--bg);
+}
+/* =================== Home End ============*/
+
+/* =================== Game Start ============*/
+.section-header {
+  margin-bottom: 3rem;
+}
+.section-header p {
+  gap: 1rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+.section-header p::before,
+.section-header p::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+}
+.section-header p::before {
+  background: linear-gradient(to right, transparent, var(--main));
+}
+.section-header p::after {
+  background: linear-gradient(to left, transparent, var(--main));
+}
+.game-card {
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.game-card:hover {
+  border-color: var(--main);
+}
+.game-card img {
+  transition: transform 0.4s ease;
+}
+.game-card:hover img {
+  transform: scale(1.2);
+}
+.game-card .overlay {
+  opacity: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(244, 114, 182, 0.6) 0%,
+    rgba(244, 114, 182, 0) 35%,
+    rgba(244, 114, 182, 0) 65%,
+    rgba(244, 114, 182, 0.6) 100%
+  );
+  transition: opacity 0.3s ease;
+}
+.game-card:hover .overlay {
+  opacity: 1;
+}
+.game-card .top-side {
+  transform: translateY(-50px);
+  transition: transform 0.3s ease;
+}
+.game-card .bottom-side {
+  transform: translateY(50px);
+  transition: transform 0.3s ease;
+}
+.game-card:hover .top-side,
+.game-card:hover .bottom-side {
+  transform: translateY(0);
+}
+/* =================== Game End ============*/
+
+/* =================== What We Do Start ============*/
+#what-we-do .row .item {
+  height: 300px;
+}
+#what-we-do .row .item-hover {
+  border: 2px solid transparent;
+}
+#what-we-do .row .item-hover::before,
+#what-we-do .row .item-hover::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: var(--main);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+#what-we-do .row .item-hover::before {
+  left: -20px;
+  top: -20px;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+#what-we-do .row .item-hover:hover::before {
+  left: 20px;
+  top: 20px;
+  opacity: 1;
+}
+#what-we-do .row .item-hover::after {
+  right: -20px;
+  bottom: -20px;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+#what-we-do .row .item-hover:hover::after {
+  right: 20px;
+  bottom: 20px;
+  opacity: 1;
+}
+#what-we-do .row .item-hover:hover {
+  border-color: var(--main);
+}
+.glow-line {
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--main) 20%,
+    var(--main) 80%,
+    transparent
+  );
+  box-shadow: 0 0 20px 2px var(--main);
+}
+
+.marquee-glow {
+  width: 90%;
+  height: 360px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(244, 114, 182, 0.7) 0%,
+    rgba(244, 114, 182, 0.5) 40%,
+    rgba(244, 114, 182, 0.2) 62%,
+    transparent 75%
+  );
+  filter: blur(2px);
+}
+.marquee-wrap {
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+}
+
+.marquee-track {
+  min-width: 100%;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-reverse .marquee-track {
+  animation-direction: reverse;
+}
+.marquee-track img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+/*=================== What We Do End ============ */
+
+/* =================== Team Start ============ */
+.avater {
+  min-height: 300px;
+  cursor: pointer;
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+}
+.gray-layer {
+  height: 100%;
+  backdrop-filter: grayscale(100%);
+  -webkit-backdrop-filter: grayscale(100%);
+  transition: height 0.8s ease;
+}
+.avater:hover .gray-layer {
+  height: 0;
+}
+.avater-1 {
+  --img: url("../images/avater-1.jpg");
+}
+.avater-2 {
+  --img: url("../images/avater-2.jpg");
+}
+.avater-3 {
+  --img: url("../images/avater-3.jpg");
+}
+.avater-4 {
+  --img: url("../images/avater-4.jpg");
+}
+.avater-5 {
+  --img: url("../images/avater-5.jpg");
+}
+.avater-6 {
+  --img: url("../images/avater-6.jpg");
+}
+.avater-7 {
+  --img: url("../images/avater-7.jpg");
+}
+.avater-8 {
+  --img: url("../images/avater-8.jpg");
+}
+
+.avater:hover h3,
+.avater:hover .side-box span {
+  color: var(--main) !important;
+}
+.side-box {
+  width: 40px;
+  height: 120px;
+}
+/* =================== Team End ============ */
+
+/* ================= Contact Start ============ */
+#contact .row .icon,
+#contact .row .social-card .social-icon {
+  width: 55px;
+  height: 55px;
+}
+#contact .row .social-card {
+  background: linear-gradient(135deg, var(--main), #a855f7);
+}
+#contact .row .social-card .social-icon:hover {
+  opacity: 0.5;
+}
+
+#contact .form-control,
+#contact .form-select {
+  color: var(--text);
+  border: 1px solid transparent !important;
+}
+
+#contact .form-control::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+#contact .form-control:focus,
+#contact .form-select:focus {
+  background-color: var(--bg);
+  color: var(--text);
+  border-color: var(--main) !important;
+  box-shadow: none;
+}
+
+#contact .form-check-input:focus {
+  border-color: var(--main);
+  box-shadow: 0 0 0 0.2rem rgba(244, 114, 182, 0.25);
+}
+#contact .form-check-input:checked {
+  background-color: var(--main);
+  border-color: var(--main);
+}
+/* ================= Contact End ============*/
+
+/* ================= Footer Start ============*/
+#footer {
+  background: #060b1d;
+}
+.footer-link {
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: var(--main);
+}
+.footer-social a {
+  width: 36px;
+  height: 36px;
+}
+/* ================= Footer End ============*/
+
+
+/* ============= Mobile Responsive ========== */
+@media (max-width: 767.98px) {
+  #home .row > div:first-child {
+    padding-top: 2rem;
+  }
+  #home h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+  #home p {
+    font-size: 0.9rem !important;
+  }
+  .hero-actions {
+    width: 100%;
+  }
+  .hero-actions .btn-main {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.85rem 1rem !important;
+  }
+  .players-card {
+    transform: translateY(25%);
+    max-width: calc(100% - 1rem);
+  }
+  #home {
+    overflow-x: clip;
+  }
+}
+
+/* ============ Tablet and Desktop =========*/
+@media (min-width: 768px) {
+  .hero-actions .btn-main {
+    width: auto !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .players-card {
+    transform: translate(-5%, 20%);
+  }
+}

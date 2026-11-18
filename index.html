@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GameArena</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<!-- ======== css ========== -->
+<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="bg-base text-color"
+      data-bs-spy="scroll"
+      data-bs-target="#navbarSupportedContent"
+      data-bs-root-margin="-80px 0px -60% 0px"
+      data-bs-smooth-scroll="true"
+      tabindex="0">
+<!-- =================== Nav Start ============ -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar bg-surface border-bottom border-info border-opacity-25">
+  <div class="container-lg container-fluid">
+    <h2 class="navbar-brand mb-0 text-main fw-bolder">
+      <i class="fa-solid fa-gamepad me-2"></i>GameArena
+    </h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <hr class="d-lg-none my-2 border-info opacity-25" />
+      <ul class="navbar-nav me-auto pb-3 pb-lg-0 ms-lg-4 gap-3 gap-lg-0">
+        <li class="nav-item"><a class="nav-link fw-medium" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium text-color" href="#games">OUR GAMES</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium text-color" href="#what-we-do">What We Do</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium text-color" href="#team">Our Team</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium text-color" href="#contact">Contact Us</a></li>
+      </ul>
+      <hr class="d-lg-none my-1 border-info opacity-25" />
+      <ul class="navbar-nav flex-column flex-lg-row align-items-lg-center ms-lg-4 gap-2 gap-lg-0">
+        <li>
+          <a href="#" class="nav-link text-color"><i class="fa-regular fa-bell me-2"></i><span class="d-lg-none">Notifications</span></a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-color"><i class="fa-regular fa-message me-2"></i><span class="d-lg-none">Messages</span></a>
+        </li>
+        <li>
+          <a href="#" class="btn-main bg-main d-block text-bg-dark-navy w-100 text-decoration-none rounded-2 text-center">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- =================== Nav End ============ -->
+
+<!-- =================== Home Start ============ -->
+<section id="home" class="d-flex align-items-center min-vh-100">
+  <div class="container">
+    <div class="row align-items-center gy-5 gx-lg-5">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h1 class="display-4 fw-bolder text-uppercase">
+          The Ultimate <br />
+          <span class="text-main">Gaming</span> <br />
+          Experience
+        </h1>
+
+        <p class="fs-5 my-4">
+          Join millions of gamers worldwide in the most competitive eSports
+          tournaments. Experience next-level gaming with cutting-edge
+          technology and endless possibilities.
+        </p>
+
+        <div class="hero-actions d-grid d-md-flex gap-3">
+  <a href="#" class="btn-main bg-main text-bg-dark-navy fw-bold text-decoration-none rounded-2 px-4 py-3 text-center w-100">
+    Start Gaming Now
+  </a>
+
+  <a href="#" class="btn-main btn-outline-accent text-decoration-none text-main border border-2 border-main rounded-2 fw-bold px-4 py-3 text-center w-100">
+    Watch Tournaments
+  </a>
+</div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="position-relative">
+          <img src="./images/hero-img.jpg" class="img-fluid w-100 border border-5 border-main rounded-4" alt="hero img" />
+
+          <div class="players-card position-absolute bottom-0 start-0 d-flex align-items-center gap-3 rounded-3 px-3 px-md-4 py-2 py-md-3 bg-surface border border-1 border-main">
+            <i class="fa-solid fa-trophy text-main fs-4"></i>
+            <div>
+              <p class="mb-0 small text-muted-2">Active Players</p>
+              <h4 class="mb-0 fw-bold">2.5M+</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =================== Home End ============ -->
+
+<!-- =================== Game Start ============ -->
+<section id="games">
+  <div class="container-lg container-fluid">
+    <div class="section-header text-center">
+      <p class="d-flex justify-content-center align-items-center text-main fw-bolder">OUR GAMES</p>
+      <h2 class="fw-bolder fa-3x">Our Latest Games</h2>
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row g-4 py-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-1.jpg" alt="image-1" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-gamepad me-2 text-main"></i>ADVENTURE</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-users me-2 text-main"></i>MULTIPLAYER</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Alien Companions</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-none d-md-block">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-2.jpg" alt="image-2" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-hat-wizard me-2 text-main"></i>RPG</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-dragon me-2 text-main"></i>FANTASY</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Dragon's Legacy</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-3.jpg" alt="image-3" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-flag-checkered me-2 text-main"></i>RACING</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-car me-2 text-main"></i>ARCADE</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Neon Racers</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-4 py-3">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-4.jpg" alt="image-4" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-crosshairs me-2 text-main"></i>ACTION</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-bomb me-2 text-main"></i>SHOOTER</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Shadow Strike</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-none d-md-block">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-5.jpg" alt="image-5" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-ghost me-2 text-main"></i>HORROR</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-skull me-2 text-main"></i>SURVIVAL</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Haunted Manor</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-6.jpg" alt="image-6" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-rocket me-2 text-main"></i>SPACE</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-chess me-2 text-main"></i>STRATEGY</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Galaxy Wars</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-4 py-3">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-7.jpg" alt="image-7" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-futbol me-2 text-main"></i>SPORTS</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-users me-2 text-main"></i>ONLINE</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Goal Masters</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-none d-md-block">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-8.jpg" alt="image-8" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-puzzle-piece me-2 text-main"></i>PUZZLE</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-wand-magic-sparkles me-2 text-main"></i>CASUAL</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Mystic Puzzle</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="game-card position-relative overflow-hidden rounded-4" role="button">
+                <img src="./images/game-9.jpg" alt="image-9" class="img-fluid w-100 d-block" />
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 p-3 d-flex flex-column justify-content-between">
+                  <div class="top-side d-flex flex-wrap gap-2">
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-compass me-2 text-main"></i>EXPLORATION</span>
+                    <span class="py-2 px-3 bg-surface text-white rounded-5"><i class="fa-solid fa-water me-2 text-main"></i>OPEN WORLD</span>
+                  </div>
+                  <h3 class="bottom-side fs-4 fw-bold text-white mb-0">Ocean Quest</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-center gap-3 mt-2">
+        <div class="d-flex justify-content-center gap-3">
+          <button class="arrow-btn btn rounded-circle bg-surface border border-main text-color" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="Previous">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="arrow-btn btn rounded-circle bg-surface border border-main text-color" type="button" data-bs-target="#carouselExample" data-bs-slide="next" aria-label="Next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <a href="#" class="btn-outline-accent text-decoration-none text-main text-center border border-2 border-main rounded-2 px-4 py-3 fw-bold">VIEW ALL GAMES</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  =================== Game End ============ -->
+
+<!--  =================== What We Do Start ============ -->
+<section id="what-we-do">
+  <div class="container-lg container-fluid">
+    <div class="section-header text-center">
+      <p class="d-flex justify-content-center align-items-center text-main fw-bolder">WHAT WE DO</p>
+      <h2 class="fw-bolder fa-3x">More Than Just Games <br>We Build <span class="text-main">Interactive</span> Journeys</h2>
+    </div>
+    <div class="row gy-3 gx-4">
+      <div class="col-lg-3 col-sm-6">
+        <div class="item item-hover position-relative overflow-hidden rounded-4 bg-surface d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-desktop f-16 bg-base text-main p-3 rounded-2 my-3"></i>
+          <h3 class="f-20 text-center fw-bolder">PC Game <br>Development</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="item item-hover position-relative overflow-hidden rounded-4 bg-surface d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-mobile-screen-button f-16 bg-base text-main p-3 rounded-2 my-3"></i>
+          <h3 class="f-20 text-center fw-bolder">Mobile Game <br>Development</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="item rounded-4">
+          <img src="./images/what-we-do-1.jpg" alt="what-we-do-1" class="d-block w-100 h-100 object-fit-cover rounded-4">
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="item item-hover position-relative overflow-hidden rounded-4 bg-surface d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-vr-cardboard f-16 bg-base text-main p-3 rounded-2 my-3"></i>
+          <h3 class="f-20 text-center fw-bolder">AR/VR <br>Solutions</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="item item-hover position-relative overflow-hidden rounded-4 bg-surface d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-cubes f-16 bg-base text-main p-3 rounded-2 my-3"></i>
+          <h3 class="f-20 text-center fw-bolder">AR/VR <br>Design</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="item rounded-4">
+          <img src="./images/what-we-do-2.jpg" alt="what-we-do-2" class="d-block w-100 h-100 object-fit-cover rounded-4">
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="item item-hover position-relative overflow-hidden rounded-4 bg-surface d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-brands fa-playstation f-16 bg-base text-main p-3 rounded-2 my-3"></i>
+          <h3 class="f-20 text-center fw-bolder">PS4 Game <br>Development</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="item item-hover position-relative overflow-hidden rounded-4 bg-surface d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-cube f-16 bg-base text-main p-3 rounded-2 my-3"></i>
+          <h3 class="f-20 text-center fw-bolder">3D <br>Modeling</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="glow-line mx-auto my-5"></div>
+    <div class="marquee-section position-relative mt-5">
+      <div class="marquee-glow position-absolute top-50 start-50 translate-middle"></div>
+      <div class="marquee-wrap position-relative overflow-hidden py-5">
+        <div class="d-flex gap-3 mb-3">
+          <div class="marquee-track d-flex flex-shrink-0 justify-content-around gap-3">
+            <img src="./images/logo-1.jpg" alt="logo 1" class="rounded-3">
+            <img src="./images/logo-2.jpg" alt="logo 2" class="rounded-3">
+            <img src="./images/logo-3.jpg" alt="logo 3" class="rounded-3">
+            <img src="./images/logo-4.jpg" alt="logo 4" class="rounded-3">
+            <img src="./images/logo-5.jpg" alt="logo 5" class="rounded-3">
+            <img src="./images/logo-6.jpg" alt="logo 6" class="rounded-3">
+            <img src="./images/logo-7.jpg" alt="logo 7" class="rounded-3">
+            <img src="./images/logo-8.jpg" alt="logo 8" class="rounded-3">
+            <img src="./images/logo-9.jpg" alt="logo 9" class="rounded-3">
+            <img src="./images/logo-10.jpg" alt="logo 10" class="rounded-3">
+            <img src="./images/logo-11.jpg" alt="logo 11" class="rounded-3">
+            <img src="./images/logo-12.jpg" alt="logo 12" class="rounded-3">
+          </div>
+          <div class="marquee-track d-flex flex-shrink-0 justify-content-around gap-3" aria-hidden="true">
+            <img src="./images/logo-1.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-2.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-3.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-4.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-5.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-6.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-7.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-8.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-9.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-10.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-11.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-12.jpg" alt="" class="rounded-3">
+          </div>
+        </div>
+        <div class="marquee-reverse d-flex gap-3">
+          <div class="marquee-track d-flex flex-shrink-0 justify-content-around gap-3">
+            <img src="./images/logo-7.jpg" alt="logo 7" class="rounded-3">
+            <img src="./images/logo-8.jpg" alt="logo 8" class="rounded-3">
+            <img src="./images/logo-9.jpg" alt="logo 9" class="rounded-3">
+            <img src="./images/logo-10.jpg" alt="logo 10" class="rounded-3">
+            <img src="./images/logo-11.jpg" alt="logo 11" class="rounded-3">
+            <img src="./images/logo-12.jpg" alt="logo 12" class="rounded-3">
+            <img src="./images/logo-1.jpg" alt="logo 1" class="rounded-3">
+            <img src="./images/logo-2.jpg" alt="logo 2" class="rounded-3">
+            <img src="./images/logo-3.jpg" alt="logo 3" class="rounded-3">
+            <img src="./images/logo-4.jpg" alt="logo 4" class="rounded-3">
+            <img src="./images/logo-5.jpg" alt="logo 5" class="rounded-3">
+            <img src="./images/logo-6.jpg" alt="logo 6" class="rounded-3">
+          </div>
+          <div class="marquee-track d-flex flex-shrink-0 justify-content-around gap-3" aria-hidden="true">
+            <img src="./images/logo-7.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-8.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-9.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-10.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-11.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-12.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-1.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-2.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-3.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-4.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-5.jpg" alt="" class="rounded-3">
+            <img src="./images/logo-6.jpg" alt="" class="rounded-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=================== What We Do End ============-->
+
+<!--=================== Team Start ============  -->
+<section id="team">
+  <div class="container-lg container-fluid">
+    <div class="section-header text-center">
+      <p class="d-flex justify-content-center align-items-center text-main fw-bolder ">OUR TEAM</p>
+      <h2 class="fw-bolder fa-3x">Our Best Team Members</h2>
+      <h5 class="text-accent">Meet the professional gamers and experts behind our success</h5>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 shadow-lg">
+        <div class="avater avater-1 position-relative overflow-hidden rounded-4 d-flex align-items-end gap-2 text-white p-3">
+          <div class="gray-layer position-absolute top-0 start-0 w-100"></div>
+          <div class="position-relative z-1 rounded-3 p-3 flex-grow-1 min-w-0">
+            <h3 class="fs-5 fw-bold mb-1">Leo "Blitz" Navarro</h3>
+            <h4 class="fs-6 fw-medium mb-1">Pro Player - Overwatch 2</h4>
+            <p class="small mb-0 text-white-50">Grand Finals MVP 2025</p>
+          </div>
+          <div class="side-box position-relative z-1 d-flex align-items-center justify-content-center flex-shrink-0">
+            <span class="fa-rotate-90 text-nowrap fw-bolder small text-white-50">PHANTOM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 shadow-lg">
+        <div class="avater avater-2 position-relative overflow-hidden rounded-4 d-flex align-items-end gap-2 text-white p-3">
+          <div class="gray-layer position-absolute top-0 start-0 w-100"></div>
+          <div class="position-relative z-1 rounded-3 p-3 flex-grow-1 min-w-0">
+            <h3 class="fs-5 fw-bold mb-1">Maya "Echo" Sullivan</h3>
+            <h4 class="fs-6 fw-medium mb-1">Pro Player - Rocket League</h4>
+            <p class="small mb-0 text-white-50">Regional Champion 2025</p>
+          </div>
+          <div class="side-box position-relative z-1 d-flex align-items-center justify-content-center flex-shrink-0">
+            <span class="fa-rotate-90 text-nowrap fw-bolder small text-white-50">NOVA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 shadow-lg">
+        <div class="avater avater-3 position-relative overflow-hidden rounded-4 d-flex align-items-end gap-2 text-white p-3">
+          <div class="gray-layer position-absolute top-0 start-0 w-100"></div>
+          <div class="position-relative z-1 rounded-3 p-3 flex-grow-1 min-w-0">
+            <h3 class="fs-5 fw-bold mb-1">Hana "Pixel" Takeda</h3>
+            <h4 class="fs-6 fw-medium mb-1">Lead Game Designer</h4>
+            <p class="small mb-0 text-white-50">12 Titles Shipped</p>
+          </div>
+          <div class="side-box position-relative z-1 d-flex align-items-center justify-content-center flex-shrink-0">
+            <span class="fa-rotate-90 text-nowrap fw-bolder small text-white-50">VIPER</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 shadow-lg">
+        <div class="avater avater-4 position-relative overflow-hidden rounded-4 d-flex align-items-end gap-2 text-white p-3">
+          <div class="gray-layer position-absolute top-0 start-0 w-100"></div>
+          <div class="position-relative z-1 rounded-3 p-3 flex-grow-1 min-w-0">
+            <h3 class="fs-5 fw-bold mb-1">Karim "Rogue" Mansour</h3>
+            <h4 class="fs-6 fw-medium mb-1">Head Coach - Fortnite</h4>
+            <p class="small mb-0 text-white-50">3x Tournament Winner</p>
+          </div>
+          <div class="side-box position-relative z-1 d-flex align-items-center justify-content-center flex-shrink-0">
+            <span class="fa-rotate-90 text-nowrap fw-bolder small text-white-50">SAGA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 shadow-lg">
+        <div class="avater avater-5 position-relative overflow-hidden rounded-4 d-flex align-items-end gap-2 text-white p-3">
+          <div class="gray-layer position-absolute top-0 start-0 w-100"></div>
+          <div class="position-relative z-1 rounded-3 p-3 flex-grow-1 min-w-0">
+            <h3 class="fs-5 fw-bold mb-1">Daniel "Cipher" Novak</h3>
+            <h4 class="fs-6 fw-medium mb-1">Performance Analyst</h4>
+            <p class="small mb-0 text-white-50">Esports Data Specialist</p>
+          </div>
+          <div class="side-box position-relative z-1 d-flex align-items-center justify-content-center flex-shrink-0">
+            <span class="fa-rotate-90 text-nowrap fw-bolder small text-white-50">STORM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 shadow-lg">
+        <div class="avater avater-6 position-relative overflow-hidden rounded-4 d-flex align-items-end gap-2 text-white p-3">
+          <div class="gray-layer position-absolute top-0 start-0 w-100"></div>
+          <div class="position-relative z-1 rounded-3 p-3 flex-grow-1 min-w-0">
+            <h3 class="fs-5 fw-bold mb-1">Zoe "Nitro" Carter</h3>
+            <h4 class="fs-6 fw-medium mb-1">Content Creator</h4>
+            <p class="small mb-0 text-white-50">1.8M+ Subscribers</p>
+          </div>
+          <div class="side-box position-relative z-1 d-flex align-items-center justify-content-center flex-shrink-0">
+            <span class="fa-rotate-90 text-nowrap fw-bolder small text-white-50">TITAN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 shadow-lg">
+        <div class="avater avater-7 position-relative overflow-hidden rounded-4 d-flex align-items-end gap-2 text-white p-3">
+          <div class="gray-layer position-absolute top-0 start-0 w-100"></div>
+          <div class="position-relative z-1 rounded-3 p-3 flex-grow-1 min-w-0">
+            <h3 class="fs-5 fw-bold mb-1">Tariq "Atlas" Rahman</h3>
+            <h4 class="fs-6 fw-medium mb-1">Team Captain - Rainbow Six</h4>
+            <p class="small mb-0 text-white-50">Pro League Winner</p>
+          </div>
+          <div class="side-box position-relative z-1 d-flex align-items-center justify-content-center flex-shrink-0">
+            <span class="fa-rotate-90 text-nowrap fw-bolder small text-white-50">PHOENIX</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 shadow-lg">
+        <div class="avater avater-8 position-relative overflow-hidden rounded-4 d-flex align-items-end gap-2 text-white p-3">
+          <div class="gray-layer position-absolute top-0 start-0 w-100"></div>
+          <div class="position-relative z-1 rounded-3 p-3 flex-grow-1 min-w-0">
+            <h3 class="fs-5 fw-bold mb-1">Elena "Aurora" Petrova</h3>
+            <h4 class="fs-6 fw-medium mb-1">Team Manager</h4>
+            <p class="small mb-0 text-white-50">Events &amp; Partnerships Lead</p>
+          </div>
+          <div class="side-box position-relative z-1 d-flex align-items-center justify-content-center flex-shrink-0">
+            <span class="fa-rotate-90 text-nowrap fw-bolder small text-white-50">GHOST</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =================== Team End ============  -->
+
+<!-- ================= Contact Start ============ -->
+<section id="contact">
+  <div class="container-lg container-fluid">
+    <div class="section-header text-center">
+      <p class="d-flex justify-content-center align-items-center text-main fw-bolder">CONTACT US</p>
+      <h2 class="fw-bolder fa-3x">Get In Touch</h2>
+      <h5 class="text-accent">Have questions or need support? We're here to help!</h5>
+    </div>
+
+    <div class="row gy-5 gx-5 align-items-start">
+      <div class="col-lg-6">
+        <div class="d-flex flex-column gap-4 h-100">
+          <div class="d-flex align-items-center flex-grow-1 py-5 px-4 rounded-4 bg-surface">
+            <div class="icon d-flex justify-content-center align-items-center bg-main text-bg-dark-navy rounded-circle flex-shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="ms-3">
+              <h3 class="fw-bolder f-20">Our Location</h3>
+              <p class="text-muted-2 mb-0">123 Gaming Street, Esports City, EC 12345</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center flex-grow-1 py-5 px-4 rounded-4 bg-surface">
+            <div class="icon d-flex justify-content-center align-items-center bg-main text-bg-dark-navy rounded-circle flex-shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="ms-3">
+              <h3 class="fw-bolder f-20">Phone Number</h3>
+              <p class="text-muted-2 mb-0">+1 (555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center flex-grow-1 py-5 px-4 rounded-4 bg-surface">
+            <div class="icon d-flex justify-content-center align-items-center bg-main text-bg-dark-navy rounded-circle flex-shrink-0">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="ms-3">
+              <h3 class="fw-bolder f-20">Email Address</h3>
+              <p class="text-muted-2 mb-0">contact@gamearena.com</p>
+            </div>
+          </div>
+
+          <div class="social-card flex-grow-1 p-4 p-md-5 rounded-4 bg-surface">
+            <h2 class="fw-bolder mb-2">Join Our Community</h2>
+            <p class="mb-4">Connect with us on social media for the latest updates</p>
+            <div class="d-flex gap-3">
+              <a href="#" class="social-icon d-flex justify-content-center align-items-center text-decoration-none bg-base text-main rounded-circle f-20"><i class="fa-brands fa-discord"></i></a>
+              <a href="#" class="social-icon d-flex justify-content-center align-items-center text-decoration-none bg-base text-main rounded-circle f-20"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-icon d-flex justify-content-center align-items-center text-decoration-none bg-base text-main rounded-circle f-20"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon d-flex justify-content-center align-items-center text-decoration-none bg-base text-main rounded-circle f-20"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="bg-surface p-4 p-md-5 rounded-4 h-100">
+          <h2 class="fw-bolder mb-4">Send us a Message</h2>
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <label for="fname" class="form-label fw-bold">First Name</label>
+                <input type="text" class="form-control p-3 bg-base border-0" id="fname" placeholder="Your first name">
+              </div>
+              <div class="col-md-6 mb-4">
+                <label for="lname" class="form-label fw-bold">Last Name</label>
+                <input type="text" class="form-control p-3 bg-base border-0" id="lname" placeholder="Your last name">
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="form-label fw-bold">Email address</label>
+              <input type="email" class="form-control p-3 bg-base border-0" id="email" placeholder="your.email@example.com">
+            </div>
+
+            <div class="mb-4">
+              <label for="subject" class="form-label fw-bold">Subject</label>
+              <select class="form-select p-3 bg-base border-0" id="subject">
+                <option value="general" selected>General Inquiry</option>
+                <option value="tournament">Tournament Support</option>
+                <option value="technical">Technical Issue</option>
+                <option value="partnership">Partnership</option>
+                <option value="media">Media Request</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="form-label fw-bold">Message</label>
+              <textarea class="form-control p-3 bg-base border-0" id="message" rows="5" placeholder="Tell us how we can help you..."></textarea>
+            </div>
+
+            <div class="mb-4">
+              <div class="form-check">
+                <input class="form-check-input bg-base" type="checkbox" id="newsletter">
+                <label class="form-check-label text-muted-2" for="newsletter">Subscribe to our newsletter for gaming updates</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-main bg-main text-bg-dark-navy d-block w-100 border-0 rounded-2 text-center fw-bold py-3">
+              Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+            </button>
+          </form>
+
+          <div class="d-flex justify-content-evenly pt-5 mt-4 border-top border-secondary border-opacity-25">
+            <div class="text-center">
+              <h3 class="text-main fw-bolder">24/7</h3>
+              <p class="text-muted-2 mb-0">Support Available</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-main fw-bolder">1hr</h3>
+              <p class="text-muted-2 mb-0">Average Response</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= Contact End ============ -->
+
+<!--================= Footer Start ============  -->
+<footer id="footer" class="pt-5 pb-4">
+  <div class="container-lg container-fluid">
+    <div class="row gy-5">
+      <div class="col-sm-6 col-lg-3">
+        <a href="#" class="d-flex align-items-center text-main text-decoration-none fw-bolder fs-4 mb-3">
+          <i class="fa-solid fa-gamepad me-2"></i>GameArena
+        </a>
+        <p class="text-muted-2 mb-4">The ultimate destination for competitive gaming, esports tournaments, and gaming community.</p>
+        <div class="footer-social d-flex gap-2 fs-5">
+          <a href="#" class="footer-link d-flex justify-content-center align-items-center text-muted-2 text-decoration-none" ><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="footer-link d-flex justify-content-center align-items-center text-muted-2 text-decoration-none"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="footer-link d-flex justify-content-center align-items-center text-muted-2 text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-link d-flex justify-content-center align-items-center text-muted-2 text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="footer-link d-flex justify-content-center align-items-center text-muted-2 text-decoration-none"><i class="fa-brands fa-twitch"></i></a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <h4 class="fw-bolder mb-4">Games</h4>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">VALORANT</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">League of Legends</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">CS:GO</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Dota 2</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Apex Legends</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <h4 class="fw-bolder mb-4">Tournaments</h4>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Upcoming Events</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Live Matches</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Results</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Rankings</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Schedule</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <h4 class="fw-bolder mb-4">Support</h4>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Help Center</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Contact Us</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Bug Reports</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Feature Requests</a></li>
+          <li class="mb-3"><a href="#" class="footer-link text-muted-2 text-decoration-none">Community Guidelines</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="my-4 border-secondary">
+
+    <div class="row align-items-center gy-3">
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <p class="text-muted-2 mb-0">&copy; 2026 GameArena. All rights reserved.</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-end gap-4 mb-0">
+          <li><a href="#" class="footer-link text-muted-2 text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link text-muted-2 text-decoration-none">Terms of Service</a></li>
+          <li><a href="#" class="footer-link text-muted-2 text-decoration-none">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--================= Footer End ============-->
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
