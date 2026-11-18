@@ -502,7 +502,7 @@ section {
     transform: translate(-5%, 20%);
   }
   .section-header h2{
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
   }
   .marquee-glow {
     width: 100%;
